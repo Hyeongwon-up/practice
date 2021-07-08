@@ -11,7 +11,20 @@ class Yorkshire: Dog() {
     }
 }
 
+open class Tiger(val origin: String) {
+    fun sayHello() {
+        println("A tiger from $origin says : grhh")
+    }
+}
+
+class SiberianTiger: Tiger("siberia")
+
 fun main() {
     val dog: Dog = Yorkshire()
     dog.sayHello()
+
+
+    val tiger: Tiger = SiberianTiger()
+    tiger.sayHello()
+
 }
